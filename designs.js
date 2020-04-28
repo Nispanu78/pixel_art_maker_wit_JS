@@ -1,21 +1,23 @@
 // Select size and color
-let color = document.getElementById('colorPicker');
-let canvas = document.getElementById('pixelCanvas');
-let sizePicker = document.getElementById('sizePicker');
-let height = document.getElementById('inputHeight').value;
-let width = document.getElementById('inputWidth').value;
+const color = document.getElementById('colorPicker');
+const canvas = document.getElementById('pixelCanvas');
+const $sizePicker = document.getElementById('sizePicker');
+const height = document.getElementById('inputHeight').value;
+const width = document.getElementById('inputWidth').value;
 
 
-// an event listener is added to listen when a user submits a form
-sizePicker.addEventListener('click', function (event) {
-    event.preventDefault();
-    let height = document.getElementById('inputHeight').value;
-    let width = document.getElementById('inputWidth').value;
-    canvas.firstElementChild.remove();
-    makeGrid(height, width);
-});
+// an event listern is added to listen when a user submits a form
+$sizePicker.addEventListener('submit', function(event) {
+      // get input data and draw grid
+      event.preventDefault();
+      let width = document.getElementById('inputWidth').value;
+      let height = document.getElementById('inputWidth').value;
+      canvas.firstElementChild.remove();
+      // call your building function
+      makeGrid(width, height);
+    })
 
-// function that builds the grid according to the data submitted by the user
+// function that builds the grid according to the data submitted by the user.
 function makeGrid(height, width) {
     for (let i = 0; i < height; i++) {
         let row = canvas.insertRow(i);
@@ -30,4 +32,5 @@ function makeGrid(height, width) {
 }
 // // When size is submitted by the user, call makeGrid()
 makeGrid(height, width);
+
 
