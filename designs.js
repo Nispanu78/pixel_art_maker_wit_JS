@@ -6,7 +6,7 @@ let height = document.getElementById('inputHeight').value;
 let width = document.getElementById('inputWidth').value;
 
 
-// an event listenern is added to listen when a user submits a form
+// an event listener is added to listen when a user submits a form
 sizePicker.addEventListener('click', function (event) {
     event.preventDefault();
     let height = document.getElementById('inputHeight').value;
