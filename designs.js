@@ -1,4 +1,4 @@
-// variables to be used
+// Select size and color
 let color = document.getElementById('colorPicker');
 let canvas = document.getElementById('pixelCanvas');
 let sizePicker = document.getElementById('sizePicker');
