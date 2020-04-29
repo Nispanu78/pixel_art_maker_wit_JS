@@ -22,7 +22,7 @@ function makeGrid(height, width) {
     for (let i = 0; i < height; i++) {
         let row = canvas.insertRow(i);
         for (let j = 0; j < width; j++) {
-            let cell = row.insertCell(j);
+        let cell = row.insertCell(j);
 // an event listener is added to listen when a user colors a cell
             cell.addEventListener('click', function (respondToTheClick)  {
                 cell.style.backgroundColor = color.value;
