@@ -14,7 +14,7 @@ $sizePicker.addEventListener('submit', function(event) {
       let width = document.getElementById('inputWidth').value;      
       canvas.firstElementChild.remove();
       // call your building function
-      makeGrid(width, height);
+      makeGrid(height, width);
     })
 
 // function that builds the grid according to the data submitted by the user
