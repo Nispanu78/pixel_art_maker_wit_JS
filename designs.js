@@ -10,8 +10,8 @@ const width = document.getElementById('inputWidth').value;
 $sizePicker.addEventListener('submit', function(event) {
       // get input data and draw grid
       event.preventDefault();
-      let width = document.getElementById('inputWidth').value;
       let height = document.getElementById('inputWidth').value;
+      let width = document.getElementById('inputWidth').value;      
       canvas.firstElementChild.remove();
       // call your building function
       makeGrid(width, height);
